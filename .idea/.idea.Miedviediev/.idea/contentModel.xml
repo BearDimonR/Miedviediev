@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\beard\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\beard\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Miedviediev.295044896.00" t="ExcludeRecursive" />
+    <e p="C:\Users\beard\OneDrive\Рабочий стол\Term4\C#\Miedviediev" t="IncludeFlat">
+      <e p="Miedviediev.Practice1" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChineseZodiac.cs" t="Include" />
+        <e p="Data.cs" t="Include" />
+        <e p="im" t="Include">
+          <e p="cake.png" t="Include" />
+        </e>
+        <e p="MainWindow.xaml" t="Include" />
+        <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="Miedviediev.Practice1.csproj" t="IncludeRecursive" />
+        <e p="ModelVM.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="App.g.cs" t="Include" />
+            <e p="GeneratedInternalTypeHelper.g.cs" t="Include" />
+            <e p="MainWindow.g.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="Annotations.cs" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="WesternZodiac.cs" t="Include" />
+      </e>
+      <e p="Miedviediev.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

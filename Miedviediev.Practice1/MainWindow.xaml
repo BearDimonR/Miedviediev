@@ -1,0 +1,70 @@
+﻿<Window x:Class="Miedviediev.Practice1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Miedviediev.Practice1"
+        xmlns:practice1="clr-namespace:Miedviediev.Practice1"
+        mc:Ignorable="d"
+        Title="Practice1"
+        Height="350"
+        Width="600"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <practice1:ModelVm />
+    </Window.DataContext>
+    <StackPanel>
+        <StackPanel.Resources>
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+            <Style TargetType="{x:Type StackPanel}">
+                <Setter Property="Margin" Value="10,15,60,10" />
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize" Value="15" />
+            </Style>
+        </StackPanel.Resources>
+        <TextBlock FontSize="25"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            Practice1 C#
+        </TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <DatePicker IsDropDownOpen="False"
+                            SelectedDateFormat="Short"
+                            FontSize="12"
+                            Margin="0,0,0,20"
+                            SelectedDate="{Binding Path=DateTime, Mode=TwoWay}"
+                            ToolTip="Enter your Birth date"
+                            Loaded="DatePickerLoaded" />
+                <TextBlock>
+                    <Run Text="Age is: " />
+                    <Run Text="{Binding Path=Age, Mode=OneWay}" />
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=RemainDays, Mode=OneWay}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" />
+                <Image Visibility="{Binding Path=IsBirthDay, Converter={StaticResource BoolToVis}, Mode=OneWay}"
+                       HorizontalAlignment="Left"
+                       Height="40" Margin="20,0,0,0"
+                       VerticalAlignment="Center"
+                       Width="60"
+                       Source="/im/cake.png" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Padding="10">
+                <Run Text="Western Zodiac is: " />
+                <Run Text="{Binding Path=WesternZodiac, Mode=OneWay}" />
+            </TextBlock>
+            <Image />
+            <TextBlock Padding="10">
+                <Run Text="Chinese Zodiac is: " />
+                <Run Text="{Binding Path=ChineseZodiac, Mode=OneWay}" />
+            </TextBlock>
+            <Image />
+        </StackPanel>
+    </StackPanel>
+</Window>
